@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>网易云音乐</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+
+    /* 头部样式 */
+    .topbar {background: #5A9BD1; height:50px; /*border-bottom: 1px solid #DDDFE3;*/position: relative;}
+    .topbar_title {display: inline-block;font-size: 20px; line-height: 50px;padding-left: 12px;}
+    .hr01, .hr02 {height: 28px;}
+    .headerico {padding: 11px 15px 11px 15px;}
+    .headericohover {background: #393939;}
+    .fr{float: right;}
+    .fl{float: left;}
+    img {vertical-align: top;}
+     /* 第二头部 */
+    .egret-header-text {line-height: 50px;color: #fff;font-size: 16px;padding: 0 10px;}
+    .egret-header-title {position: absolute;width: 100%;text-align: center;line-height: 50px;color: #fff;font-size: 20px;}
+
+    .navbar {display: -webkit-box; -webkit-box-orient: horizontal; position: relative; height: 40px; box-sizing: border-box; background: rgba(255,255,255,0.4); /*border-bottom: 1px solid #e0e0e0;*/ }
+    .navbar-item {display: block; -webkit-box-flex: 1; width: 100%; line-height: 40px;  font-size: 16px; text-align: center;color: #484848; background-color: #393939;}
+    .navbar-item-hov {background-color:#393939; }
+    .navbar-item-active {/*color: #D43C33;*/ color: #c8c8c8; }
+    #navmark {position: absolute; left: 0px; bottom: 0px; -webkit-transition: 300ms; text-align: center; height: 2px;background-color: #393939;}
+
+  .switchbar_index_img {height: 20px; padding-top: 10px; padding-right: 5px;}
+
+  .findimg { text-align: center;}
+  .findimg img {width: 50%;margin-top: 30px;}
+  .findinfo {text-align: center;color: #585858;margin-top: 20px;}
+  html,body {min-height: 80%;background-color: #393939;}
+  /* 悬浮 */
+  .fmbtnhover {background: #D8D9DA ;}
+  .fmbtnhoverinside {background: #D8D9DA ;}
+
+  .findimg { text-align: center;}
+  .findimg img {width: 50%;margin-top: 10px;}
+  .findinfo {text-align: center;color: #585858;margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 第三头部 -->
+        <div id="thridHeader" class="titlebar">
+            <div class="egret-header topbar">
+                <div class="egret-header-title">听歌识曲</div>
+                <div  class="egret-img"><img src="../image/cm2_icn_back.png" alt="" onclick="goback()" ></div>
+            </div>
+        </div>
+        <nav class="navbar" id="firstHeaderIndex">
+                <a id="navbar-item-recommend" class="navbar-item"><img src="../image/cm2_toptab_mike_prs.png" class="switchbar_index_img" id="switchbar_index_left_img"/>识别音乐</a>
+                <a id="navbar-item-rank" class="navbar-item"><img src="../image/cm2_toptab_history.png" class="switchbar_index_img " id="switchbar_index_right_img"/>识别历史</a>
+                <mark id="navmark"></mark>
+            </nav>
+            <div class="findimg"><img src="../image/findmusic.png"></div>
+            <div class="findinfo">旋律识别，识别你周围播放的歌</div>
+    </div>
+
+</body>
+</script>
+</html>
